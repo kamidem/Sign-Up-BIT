@@ -1,10 +1,18 @@
 body {
-  background-color: darkolivegreen;
+  background-color: #0044b5;
+}
+.background-image {
+  background-image: url("../img/hill.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  background-position: center;
+  height: 100%;
+  background-position: center;
 }
 .container {
   display: inline-block;
   width: 800px;
-  background-color: red;
   margin-left: calc((100% - 800px) / 2);
   margin-top: 100px;
   font-family: "Montserrat", sans-serif;
@@ -45,13 +53,54 @@ img {
   margin: 25px;
 }
 form {
-  background-color: aqua;
-  margin: 60px;
-  height: 400px;
+  margin: 70px;
+  height: 380px;
 }
 label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: gray;
 }
+
 input {
+  display: block;
+  margin-bottom: 40px;
+  width: 95%;
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+
+#button {
+  width: 50%;
+  line-height: 33px;
+  border: 1px solid white;
+  background-color: blue;
+  background-image: linear-gradient(
+    to right,
+    #0042a7,
+    #0044b5,
+    #0046c2,
+    #0048d0,
+    #0749dd
+  );
+  color: white;
+  font-size: 15px;
+  border-radius: 18px;
+  font-weight: 600;
+  display: inline-block;
+}
+form > p {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #0749dd;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 5px;
 }
 
 /* 
