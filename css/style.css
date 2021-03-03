@@ -1,19 +1,57 @@
+body {
+  background-color: darkolivegreen;
+}
 .container {
   display: inline-block;
   width: 800px;
   background-color: red;
   margin-left: calc((100% - 800px) / 2);
   margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
 }
+
 .left-column {
   width: 40%;
   float: left;
-  background-color: blue;
+  background-image: url("../img/hill.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  color: white;
+  margin-top: 35px;
 }
+h1 {
+  font-size: 41px;
+  margin: 40px 50px;
+  font-weight: 100;
+}
+.policy {
+  font-size: 13px;
+  text-decoration: underline;
+  position: relative;
+  text-align: center;
+  top: 275px;
+}
+
 .right-column {
   width: 60%;
   float: left;
-  background-color: yellow;
+  background-color: white;
+  height: 520px;
+}
+img {
+  width: 17px;
+  float: right;
+  margin: 25px;
+}
+form {
+  background-color: aqua;
+  margin: 60px;
+  height: 400px;
+}
+label {
+}
+input {
 }
 
 /* 
