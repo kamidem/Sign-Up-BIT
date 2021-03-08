@@ -1,7 +1,17 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: cornflowerblue;
+}
 .container {
   display: inline-block;
   width: 800px;
-  background-color: red;
   margin-left: calc((100% - 800px) / 2);
   margin-top: 100px;
 }
@@ -13,13 +23,86 @@
 .right-column {
   width: 60%;
   float: left;
-  background-color: yellow;
+  padding: 60px;
+  background-color: #fff;
+}
+.close {
+}
+form {
+  display: inline-block;
+  width: 100%;
+}
+.form-row {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.form-row:last-of-type {
+  margin-bottom: 0;
+}
+label {
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+input {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+button {
+  float: left;
+  padding: 10px 35px;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #015cda;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+span {
+  float: left;
+  padding: 5px;
+  line-height: 20px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+a {
+  float: left;
+  padding: 5px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #015cda;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 /* 
 jei vaikai vienas kito atzvilgiu bando floatint, tai reik pasakyt kad tevas inline-block
 jei vaikai bando floating - tevas praranda auksti, tevas saugus tik jei turi inline-block savybe
-
-
-
+kablelis atskiria kelis selektorius tam paciam stiliui
+* reiskia betkas arba viskas body * -> visi elementai esantys bodyje; > reiskia kad norima tiesioginio vaiko
+box-sizing: border-box; read about it vs content-box
+teve enter: 
+susikurt galima savo toki trumpini
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+border radius - puse elemento aukscio viso (border, padding, line height)
+font weight: bold 700; normal 400;
+kuo maziau srifto variaciju, tuo greiciau projektas veikia
 */
