@@ -25,8 +25,24 @@ body {
   float: left;
   padding: 60px;
   background-color: #fff;
+  position: relative;
 }
 .close {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 57px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+}
+.close:hover {
+  color: #015cda;
 }
 form {
   display: inline-block;
@@ -105,4 +121,13 @@ body * {
 border radius - puse elemento aukscio viso (border, padding, line height)
 font weight: bold 700; normal 400;
 kuo maziau srifto variaciju, tuo greiciau projektas veikia
+
+text vidurys yra 55% nuo virsaus, 45% nuo apacios
+
+POSITIONING
+position: relative; --> atskaitos taskas  absolutui, jo ieskoti paciam artimiausiam teviniam elemente, kurio dimensions sutampa
+bottom ir left reiksmes yra visada labiau prioritetines nei right ir bottom. taip pat plotis ir aukstis yra virsesnes reiksmes nei pozicionavimo reiksmes
+
+
+
 */
