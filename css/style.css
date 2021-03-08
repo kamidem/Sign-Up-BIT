@@ -14,15 +14,45 @@ body {
   width: 800px;
   margin-left: calc((100% - 800px) / 2);
   margin-top: 100px;
+  position: relative;
 }
 .left-column {
   width: 40%;
-  float: left;
+  display: inline-block;
   background-color: blue;
+  background-image: url(../img/hill.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  bottom: 30px;
+  color: white;
 }
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: 30px;
+}
+.left-column > div {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+}
+.left-column > div > span {
+  margin: 0;
+}
+.left-column > div > a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .right-column {
   width: 60%;
-  float: left;
+  float: right;
   padding: 60px;
   background-color: #fff;
   position: relative;
@@ -127,7 +157,10 @@ text vidurys yra 55% nuo virsaus, 45% nuo apacios
 POSITIONING
 position: relative; --> atskaitos taskas  absolutui, jo ieskoti paciam artimiausiam teviniam elemente, kurio dimensions sutampa
 bottom ir left reiksmes yra visada labiau prioritetines nei right ir bottom. taip pat plotis ir aukstis yra virsesnes reiksmes nei pozicionavimo reiksmes
+visi elementai by default yra static
 
+reliatyvus keliai
+./ ei i folderi; ../ eiti is folderio
 
 
 */
