@@ -7,9 +7,19 @@ body * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 body {
-  background-color: cornflowerblue;
+  background-color: slateblue;
   position: relative;
   height: 100vh;
+}
+.bkg {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/hill.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(15px);
 }
 .container {
   display: inline-block;
@@ -22,7 +32,6 @@ body {
 .left-column {
   width: 40%;
   display: inline-block;
-  background-color: blue;
   background-image: url(../img/hill.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -174,6 +183,10 @@ transform: translate(-50%, -50%);
 position: absolute;
 top: 50%;
 left: 50%;
+
+BLUR
+yra backgrop-filter
+ir tiesiog blur. backdrop - blurina viska po tuo vaikiniu elementu
   
 
 */
